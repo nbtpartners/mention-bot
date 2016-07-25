@@ -123,7 +123,7 @@ async function work(body) {
     fileBlacklist: [],
     requiredOrgs: [],
     findPotentialReviewers: true,
-    actions: ['opened','edited','synchronize'],
+    actions: ['opened','synchronize'],
     skipAlreadyAssignedPR: false,
     skipAlreadyMentionedPR: false,
     delayed: false,
