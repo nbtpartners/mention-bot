@@ -78,13 +78,11 @@ function buildMentionSentence(reviewers) {
 
 function defaultMessageGenerator(reviewers, pullRequester) {
   return util.format(
-    '%s, thanks for your PR! ' +
-    'By analyzing the annotation information on this pull request' +
-    ', we identified %s to be%s potential reviewer%s',
+    '%s 님, 멋진 코드를 올려주셨네요!! ' +
+    '이 풀 리퀘스트의 어노테이션 정보를 분석한 결과 ' +
+    '%s 를 잠재적 리뷰어로 선정했습니다.',
     pullRequester,
-    buildMentionSentence(reviewers),
-    reviewers.length > 1 ? '' : ' a',
-    reviewers.length > 1 ? 's' : ''
+    buildMentionSentence(reviewers)
   );
 }
 
